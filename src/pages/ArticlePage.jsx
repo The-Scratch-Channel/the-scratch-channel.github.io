@@ -11,7 +11,7 @@ export default function ArticlePage() {
     useEffect(() => {
         async function fetchArticle() {
             try {
-                const fileRes = await fetch(`/articles/${filename}`);
+                const fileRes = await fetch(`https://myscratchblocks.onrender.com/scratch-channel/articles/${filename}`);
                 const text = await fileRes.text();
                 const lines = text.split("\n");
 
